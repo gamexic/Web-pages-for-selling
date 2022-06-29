@@ -10,13 +10,18 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+:root {
+    --sky-blue: #AECFDF;
+    --light-green: #81E4DA;
+    --dark-green: #47E5BC;
+}
 
 header {
     width: 100%;
     height: 140px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: rgba(9, 176, 176, 0.363);
+    background-color: var(--light-green);
 }
 header .header-socialNetworks-icon-container {
     width: 300px;
@@ -34,7 +39,7 @@ header .header-socialNetworks-icon-container a {
     align-items: center;
 }
 header .header-socialNetworks-icon-container a:hover {
-    background-color: rgba(17, 255, 255, 0.363);
+    background-color: var(--dark-green);
     border-radius: 5px;
 }
 header .header-socialNetworks-icon-container a img {
@@ -46,7 +51,7 @@ header nav {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: aqua;
+    background-color: var(--dark-green);
 }
 header nav .header-nav-logo-container {
     height: 100%;
@@ -108,6 +113,60 @@ main .main-welcome-container img{
 main .main-welcome-container h1 {
     position: absolute;
     font-size: 4rem;
+    font-weight: bold;
     bottom: 20px;
     text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(209, 210, 212, 0.4);
+}
+
+main .main-services-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-services-container .card-services-container {
+    padding: 20px;
+    height: auto;
+    margin: 20px 0;
+    row-gap: 40px;
+    
+    display: grid;
+    min-width: 320px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+main .main-services-container .card-services-container .card-services {
+    width: 300px;
+    text-align: center;
+    background-color: var(--light-green);
+    height: 450px;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-rows: 180px 40px 210px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.78); 
+    box-shadow: 3px 3px 7px 1px var(--sky-blue);
+}
+main .main-services-container .card-services-container .card-services img {
+    width: 250px;
+    object-fit: cover;
+}
+main .main-services-container .card-services-container .card-services h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+main .main-services-container .card-services-container .card-services p {
+    font-size: 1.4rem;
+    font-weight: 500;
 }
