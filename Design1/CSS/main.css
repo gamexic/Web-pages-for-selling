@@ -140,7 +140,7 @@ main .main-services-container .card-services-container {
     max-width: 1200px;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 main .main-services-container .card-services-container .card-services {
     width: 300px;
@@ -240,4 +240,90 @@ footer .map {
 }
 footer .map iframe {
     width: 100%;
+}
+
+
+
+main .about-us {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .about-us .about-us-container {
+    max-width: 800px;
+    background-color: var(--light-green);
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.47); 
+    box-shadow: 0px 0px 9px 3px var(--sky-blue);
+}
+main .about-us .about-us-container img {
+    width: 100%;
+    border-radius: 50%;
+    height: 60px;
+}
+main .about-us .about-us-container .about-us-container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+main .about-us .about-us-container .about-us-container-info h2 {
+    border-bottom: 1px solid black;
+    padding: 0 4px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.07rem;
+}
+main .about-us .about-us-container .about-us-container-info p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: 0.04rem;
+    padding: 20px 0;
+}
+
+main .vision-and-mission-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+    padding: 0 20px;
+}
+main .vision-and-mission-container .vision, .mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: none;
+    row-gap: 10px;
+    max-width: 800px;
+}
+main .vision-and-mission-container h2 {
+    border-bottom: 1px solid var(--dark-green);
+    padding: 0 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+main .vision-and-mission-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: 0.04rem;
 }

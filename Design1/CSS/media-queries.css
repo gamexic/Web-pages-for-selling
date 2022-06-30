@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+    main .main-services-container .card-services-container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+    footer .personal-information {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    main .main-services-container .card-services-container {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
